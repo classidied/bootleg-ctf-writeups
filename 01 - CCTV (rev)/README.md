@@ -1,6 +1,6 @@
 # Novosibirsk - Chemical plant
 
-## Description
+## Description/Storyline
 "You must wonder why we have summoned you, AGENT? It has come to our attention that something terrible is about to take place. There is still time to prevent the disaster, and we could not think of anyone more suited for this task than you. We believe that if you can’t solve this quest, neither can anybody else. You have to travel to Novosibirsk, and investigate a suspicious chemical plant. This mission must be executed in secrecy. It’s classified, and it regards the safety of the whole world, therefore we can’t tell you anything more just yet. Go now, you have the fate of the world in your hands."
 
 Challenge: CCTV (rev)  
@@ -32,18 +32,19 @@ if(p[0] === 52037 &&
     alert("Wrong password!");
 }
 ```
-Reversing the operations on **p** with this script:
+Reversing the operations on **p**:
 ```javascript
 for (let i = 0; i < 12; i++) {
     p[i] = String.fromCharCode(p[i] - 0xCafe)
 }
 console.log('Password: ' + p.join(''));
 ```
-
+outputs `Password: GoodPassword`.
 
 Once entered into the site, we get 4 CCTV cams and the flag:
+![image](https://user-images.githubusercontent.com/71155602/131226939-ba5c3d8f-d6c7-4ae0-a646-32e87dc27d90.png)
 
-## Flag: 
-`CTF{IJustHopeThisIsNotOnShodan}`
+
+Flag: `CTF{IJustHopeThisIsNotOnShodan}`
 
 

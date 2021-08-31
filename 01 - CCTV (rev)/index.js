@@ -5,6 +5,8 @@ const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
 takes user input (value), stores in an array
 maps each [value + 0xCafe (which is 51966)] into a new array
 that array is p
+
+why did I do this in js 
 */
 const p = [];
 

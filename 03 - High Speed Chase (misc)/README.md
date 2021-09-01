@@ -37,3 +37,4 @@ function controlCar(scanArray) {
 Success! (though I did experience the "that was it?" vibe)  
 ![image](https://i.imgur.com/hBclFw6.png)
 Flag: `CTF{cbe138a2cd7bd97ab726ebd67e3b7126707f3e7f}`
+

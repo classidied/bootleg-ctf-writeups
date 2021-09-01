@@ -15,3 +15,4 @@ The objective is to find all the places where **1** must be set in order to reac
 ![image](https://i.imgur.com/Xv12xRm.png)
 
 Flag: `CTF{BCFIJ}`
+

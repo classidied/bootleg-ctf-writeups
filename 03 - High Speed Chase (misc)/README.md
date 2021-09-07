@@ -12,7 +12,7 @@ Challenge: High Speed Chase (misc)
 You chase them through city streets until you reach the high way. The traffic is pretty rough for a car and you see them gaining ground - should have hotwired a motorbike as well! Too late for that. You look around your car to spot anything useful, and you notice this is actually one of the new self driving cars. You turn on the autopilot, pull out your laptop, connect it to the system, and enter the not-so-hidden developer's mode. It's time to re-program the autopilot to be a bit more useful in a chase! To make it easier, you replace the in-car LiDAR feed with a feed from an overhead sattelite - you also display it on the the entertainment system. Now all that's left to do, is to write a better controlCar function!
 
 ## What You'll Need
-https://high-speed-chase-web.2021.ctfcompetition.com/
+https://high-speed-chase-web.2021.ctfcompetition.com/  
 https://high-speed-chase-web.2021.ctfcompetition.com/task3explained.png
 
 ## Solution
@@ -23,9 +23,9 @@ function controlCar(scanArray) {
     var max = Math.max(...scanArray);
     for (let i = 0; i < 16; i++) {
         if (scanArray[i] == max) {
-            if (i == 8) {
+            if (i == 7) {
                 return 0;
-            } else if (i <= 7) {
+            } else if (i <= 6) {
                 return -1;
             } else {
                 return 1;

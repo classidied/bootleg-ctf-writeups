@@ -4,9 +4,9 @@ function controlCar(scanArray) {
     // turning left or right based on the greatest value found
     for (let i = 0; i < 16; i++) {
         if (scanArray[i] == max) {
-            if (i == 8) {
+            if (i == 7) {
                 return 0;
-            } else if (i <= 7) {
+            } else if (i <= 6) {
                 return -1;
             } else {
                 return 1;

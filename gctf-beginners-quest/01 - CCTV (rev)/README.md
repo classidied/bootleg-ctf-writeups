@@ -35,9 +35,13 @@ if(p[0] === 52037 &&
 Reversing the operations on **p**:
 ```javascript
 for (let i = 0; i < 12; i++) {
-    p[i] = String.fromCharCode(p[i] - 0xCafe)
+    process.stdout.write(String.fromCharCode(p[i] - 0xCafe));
 }
-console.log('Password: ' + p.join(''));
+```
+(or in python)
+```python
+for x in range(len(p)):
+    print(chr(p[x] - 0xCafe), end="")
 ```
 outputs `Password: GoodPassword`.
 

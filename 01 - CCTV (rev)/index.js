@@ -25,8 +25,8 @@ p[11] = 52066
 
 // reverse the addition to get v
 for (let i = 0; i < 12; i++) {
-    p[i] = String.fromCharCode(p[i] - 0xCafe)
+    process.stdout.write(String.fromCharCode(p[i] - 0xCafe));
 }
-console.log('Password: ' + p.join(''));
+// console.log('Password: ' + p.join(''));
 
 // Output: Password: GoodPassword

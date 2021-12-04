@@ -16,6 +16,6 @@ Markdown editors can be exploited using XSS (Cross-Site Scripting) vulnerabiliti
 I also noticed that pages 1 and 2 were valid on the server, and any new pages created started indexing at 9 and up. All the pages between 3-8 (inclusive) were not found, and page 5 was forbidden. 
 
 ### Flags found in order:  
-[Flag2](Flag2.md)
+[Flag2](Flag2.md)  
 [Flag0](Flag0.md)
 
